@@ -48,7 +48,20 @@ class App {
 		if (options.model) {
 			this.view(options.model, '', new Map());
 		}
+
+		this.setupExampleSelector();
+
 	}
+
+	setupExampleSelector() {
+        const selector = document.getElementById('example-selector');
+        selector.addEventListener('change', (event) => {
+            const selectedModel = event.target.value;
+            if (selectedModel) {
+                this.view(selectedModel, '', new Map());
+            }
+        });
+    }
 
 	/**
 	 * Sets up the drag-and-drop controller.
