@@ -22,9 +22,9 @@
 	<main class="wrap">
 		<div class="dropzone">
 			<div class="placeholder">
-				<p>Drag glTF 2.0 file or folder here</p>
+				<p>Choose any object</p>
 			</div>
-			<div class="upload-btn">
+			<div class="upload-btn" style="display: none;">
 				<input type="file" name="file-input[]" id="file-input" multiple="" />
 				<label for="file-input">
 					<svg
@@ -42,7 +42,7 @@
 			</div>
 
 			<select id="example-selector">
-				<option value="" disabled selected>Choose an example</option>
+				<option value="" disabled selected>Here</option>
 				<option value="examples/cycling_helmet.glb">Cycling helmet</option>
 				<option value="examples/helmet2.glb">Helmet (second option)</option>
 				<option value="examples/knee_protector.glb">Knee protector</option>

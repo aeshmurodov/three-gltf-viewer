@@ -77,7 +77,7 @@ export class Viewer {
 			autoRotate: false,
 
 			// Lights
-			punctualLights: true,
+			punctualLights: false,
 			exposure: 0.0,
 			toneMapping: LinearToneMapping,
 			ambientIntensity: 0.3,
@@ -289,7 +289,7 @@ export class Viewer {
 		this.scene.add(object);
 		this.content = object;
 
-		this.state.punctualLights = true;
+		this.state.punctualLights = false;
 
 		this.content.traverse((node) => {
 			if (node.isLight) {
